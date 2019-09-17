@@ -24,8 +24,6 @@ public class Lesson10 {
             newDate = destinationFormat.format(date);
             System.out.println(newDate);
 
-
-            return newDate;
         } catch (ParseException e) {
             System.out.println("Can't parse");
         }
