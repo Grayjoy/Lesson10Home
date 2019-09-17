@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.Locale;
 
 public class Lesson10 {
-    String newDate;
+   private String newDate;
 
     public String formatDate() {
         String firstDate = "15.08.1995 18:30:15";
@@ -29,7 +29,7 @@ public class Lesson10 {
         } catch (ParseException e) {
             System.out.println("Can't parse");
         }
-       return newDate;
+        return newDate;
     }
 
     public void writtenFile(String newDate) {
