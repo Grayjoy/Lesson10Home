@@ -1,4 +1,5 @@
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -34,7 +35,7 @@ public class Lesson10 {
     public void writtenFile(String newDate) {
 
         try {
-            FileWriter writer = new FileWriter("C:\\Agr\\lesson.txt");
+            FileWriter writer = new FileWriter(System.getProperty("user.dir") + File.separator + "lesson.txt");
             writer.write(newDate);
 
             writer.flush(); // как я понял метод flush() позволит производить перезапись файла дальше в программе
