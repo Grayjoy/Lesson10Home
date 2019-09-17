@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.Locale;
 
 public class Lesson10 {
+    String newDate;
 
     public String formatDate() {
         String firstDate = "15.08.1995 18:30:15";
@@ -18,18 +19,17 @@ public class Lesson10 {
                 Locale.US);
         Date date;
 
-        String newDate;
-
         try {
             date = df.parse(firstDate);
             newDate = destinationFormat.format(date);
             System.out.println(newDate);
 
+
             return newDate;
         } catch (ParseException e) {
             System.out.println("Can't parse");
         }
-        return "";
+       return newDate;
     }
 
     public void writtenFile(String newDate) {
